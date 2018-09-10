@@ -1,0 +1,403 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Unica One', cursive;
+  color: #656363;
+  height: 100vh;
+  background: #E2E2E5;
+  background-repeat: no-repeat;
+}
+body.home {
+  background-image: linear-gradient(to right top, #3a6973, #366b81, #3c6c8e, #4d6b98, #65689d);
+}
+/*************************************Login************************************/
+.login-form {
+  width: 40%;
+  min-width: 320px;
+  max-width: 475px;
+  border-radius: 5%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 40em) {
+  .login-form {
+    width: 95%;
+    position: relative;
+    margin: 2.5% auto 0 auto;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+}
+.login-form form {
+  display: block;
+  width: 100%;
+  padding: 2em;
+}
+.login-form h2 {
+  color: #5d5d5d;
+  font-size: 1.35em;
+  display: block;
+  background: #2a2a2a;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0.75em 1em 0.75em 1.5em;
+  box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.050000000000000044);
+  border: 1px solid #1d1d1d;
+  margin: 0;
+  font-weight: 200;
+}
+.login-form input {
+  display: block;
+  margin: auto auto;
+  width: 100%;
+  margin-bottom: 2em;
+  padding: 0.5em 0;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1.25em;
+  color: #757575;
+}
+.login-form input:focus {
+  outline: none;
+}
+.login-form .btn {
+  display: inline-block;
+  background: #1fb5bf;
+  border: 1px solid #1ba0a9;
+  padding: 0.5em 2em;
+  color: white;
+  margin-right: 0.5em;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.19999999999999996);
+}
+.login-form .btn:hover {
+  background: #23cad5;
+}
+.login-form .btn:active {
+  background: #1fb5bf;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.09999999999999998);
+}
+.login-form .btn:focus {
+  outline: none;
+}
+.login-form .forgot {
+  color: #1c929b;
+  line-height: 0.5em;
+  position: relative;
+  top: 2.5em;
+  text-decoration: none;
+  font-size: 0.75em;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.login-form .forgot:hover {
+  color: #1ba0a9;
+}
+
+/*************************************Login************************************/
+
+/*************************************HEADER************************************/
+
+header{
+  width: 100%;
+  height: 150px;
+  background: #26262e;
+  display: flex;
+}
+
+header figure{
+  width: 225px;
+}
+
+header img{
+  width: 225px;
+  margin-top: 45px;
+  margin-left: 15px;
+}
+header ul{
+  display: block;
+  list-style: none;
+  font-size: 24px;
+  line-height: 61px;
+}
+h1{
+  align-self: center;
+  text-align: center;
+  font-size: 45px;
+  height: 100px;
+  width: 325px;
+  margin: auto;
+  
+}
+h1#p_stock {
+  width: 100%;
+  height: auto;
+  /* margin-left: 20%; */
+}
+
+.addform{
+  
+  margin: auto;
+  height: 70px;
+  width: 250px;
+  display: none;
+  font-size: 27px;
+  z-index: 2;
+}
+
+.addform p{
+  align-self: center;
+}
+
+#createProd button{
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  border: 5px solid #383838;
+  color: #383838;
+  font-size: 55px;
+  line-height: 13px;
+  display: block;
+}
+
+
+
+/*************************************HEADER************************************/
+
+/*************************************FORMULAIRE************************************/
+
+form#formulaire{
+  background: #26262e;
+  position: absolute;
+  height: 200px;;
+  top:100px;
+  opacity: 0;
+  transition: 2s;
+  width: 80%;
+  height: auto;
+  margin-left: 11%;
+  display: flex;
+  flex-wrap: wrap
+}
+
+#formulaire.txtform{
+  height: 80px;
+  width: 290px;
+  align-self: center;
+  font-size: 23px;
+  margin-left: 20px;
+}
+
+#formulaire input, #formulaire #brand, #formulaire #des{
+  height: 25px;
+  width: 288px;
+  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
+  border: none;
+  background: #656363;
+  color: #26262e;
+}
+
+#formulaire input::placeholder{
+  color: lightgray;
+  padding-left: 10px;
+}
+
+#formulaire input#prix::placeholder{
+  color: lightgray;
+  padding-left: 10px;
+}
+
+#addProd{
+  align-self: center;
+  border: 3px outset grey;
+  height: 25px;
+  width: 120px;
+  color: #656363;
+  border-radius: 8px;
+  box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.7);
+  background: #383838;
+  margin-left: 18px;
+}
+
+#validProd{
+  align-self: center;
+  border: 3px outset grey;
+  height: 50px;
+  width: 120px;
+  color: #656363;
+  border-radius: 8px;
+  box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.7);
+  background: #383838;
+  margin-left: 18px;
+}
+
+/*************************************FORMULAIRE************************************/
+
+/*************************************TABLE************************************/
+table{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 250px;
+  border-collapse: collapse;
+}
+
+tbody{
+    display: block;
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    margin-bottom: 15px;
+}
+
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+tr:nth-child(odd){
+  background: #656363;
+  height: 78px;
+  color: #26262e;
+}
+
+tr:nth-child(even){
+  background: #26262e;
+  height: 78px;
+}
+
+th{
+  font-size: 24px;
+  background: #26262e;
+  height: 70px;
+  color: #656363;
+}
+
+td{
+  text-align: center;
+}
+
+.stylebtn{
+  border: 3px outset grey;
+  height: 35px;
+  color: #656363;
+  border-radius: 10px;
+  box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.7);
+  background: #383838;
+  margin-left: 25%;
+}
+
+.stylemod{
+  text-align: center;
+  width: 125px;
+}
+
+/*************************************TABLE************************************/
+button{
+    display: none;
+}
+.is-active{
+    display: flex;
+}
+
+a#btn_home {
+  margin: auto;
+  display: block;
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: #656363;
+  text-decoration: none;
+  color: snow;
+}
+
+/*************************************BRAND************************************/
+
+#sec_brand article:first-child {
+  background: #ccc;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px 0px;
+}
+#sec_brand #add_brand {
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+}
+
+#sec_brand #add_brand:hover {
+  box-shadow: 0 0 1px 1px rgba(255,255,255,0.8) inset, 0 1px 0 0 rgba(0,0,0,0.298039) ;
+}
+
+#sec_brand .in_brd {
+  margin: auto;
+  display: inline-block;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: 1px solid #b7b7b7;
+  border-radius: 3px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(0,142,198,1);
+  text-overflow: clip;
+  background: rgba(252,252,252,1);
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#sec_brand ul{
+  list-style-type:none;
+  margin: 20px auto;
+  width: 95%;
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  column-rule-color: #ccc;
+  height: 60vh;
+  overflow-y: scroll
+}
+#sec_brand ul li{
+  text-align: justify;
+}
+#sec_brand button{
+  display: inline-block;
+  outline: none;
+  border-radius: 10px;
+  width: 25px;
+  height: 25px;
+  margin: 0px 2px;
+  background: #1fb5bf;
+  border: 1px solid #1ba0a9;
+  color: white;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.19999999999999996);
+}
+#sec_brand button:nth-child(2){
+  margin-right: 10px;
+}
+
+#sec_brand button:hover {
+  background: #23cad5;
+  cursor: pointer;
+}
+#sec_brand button:active {
+  background: #1fb5bf;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.09999999999999998);
+}
+#sec_brand button:focus {
+  outline: none;
+}
+/*************************************BRAND************************************/

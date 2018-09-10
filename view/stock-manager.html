@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Gestion du stock</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script src="js/app_stock.js" charset="utf-8"></script>
+  
+</head>
+<body>
+  <header>
+    <figure>
+      <img src="img/lg.png" alt="">
+    </figure>
+    <h1 id="p_stock">GESTION DU STOCK</h1>
+    <ul>
+      <li id="btn_stock">Stock</li>
+      <li id="btn_brand">Marques</li>
+    </ul>
+    
+  </header>
+  <div class="addform is-active" id="createProd">
+    <p>Ajouter au stock</p>
+    <button class="createProd"> +</button>
+  </div>
+  <section id="sec_stock" style="display: block;">
+    <form id="formulaire">
+      <div class="txtform">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" value="" placeholder="Article">
+      </div>
+      <div class="txtform">
+          <label for="nom">Marque</label>
+        <select name="brand" id="brand">
+          <option value="1">Brand</option>
+          <option value="2">Brand2</option>
+        </select>
+      </div>
+      <div class="txtform">
+        <label for="prix">Prix</label>
+        <input type="number" min="0" id="prix" value="0">
+      </div>
+      <div class="txtform">
+        <label for="Description">Description</label>
+        <textarea type="text" maxlength="235" id="des" value="" placeholder="(235 caractères)"></textarea>
+      </div>
+      <button class="is-active" type="button" name="btn_addStock" id="addProd">Valider</button>
+      <button type="button" name="btn_addStock" id="validProd">Valider les modifications</button>
+    </form>
+    <table>
+      <thead>
+          <tr>
+            <th>Nom de l'article</th>
+            <th>Reference</th>
+            <th>Marque</th>
+            <th>Prix</th>
+            <th>Description</th>
+            <th>Action</th>
+
+          </tr>
+
+      </thead>
+      <tbody id="body_tbl">
+
+      </tbody>
+
+    </table>
+  </section>
+  <section id="sec_brand" style="display: none;">
+    <article>
+      <input type="text"class="in_brd" placeholder="Ajouter une marque" maxlength="100">
+      <button id="add_brand"><i class="fas fa-plus"></i></button>
+    </article>
+    <article>
+      <ul></ul>
+    </article>
+  </section>
+</body>
+</html>
