@@ -7,6 +7,7 @@ else { https://docs.google.com/presentation/d/1i9_n_26v9mylaCJr5u5gha0vwAPQx7yus
 
 # Demo
 https://gestionstock.lauriannel.now.sh/stock-manager
+
 username : admin
 password : biz123
 
