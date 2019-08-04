@@ -12,8 +12,3 @@ username : admin
 password : biz123
 
 Laurianne Lebreton - Aïcha Ali - Pierre Berthélemy
-# TP_GestionStock_CRUD_LaurianneLebreton
-
-# TP_GestionStock_CRUD_LaurianneLebreton
-
-# TP_GestionStock_CRUD_LaurianneLebreton
